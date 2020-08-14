@@ -10,14 +10,14 @@ Then run extract_embeddings.py to save the embeddings of each face. Then run tra
 
 <h1> Todo: </h1>
  - Add automatic image capturing script <br>
- - Implement align_faces.py to align faces before extracting embeddings 
- - Image augmentation
-    - Reflect image over y-axis
-    - Generate images with different lighting than original image
- - Change extract_embeddings.py so it only looks over the new images
- - Build model testing framework to get an evaluation metric for the SVM
- - Fine tune SVM for better accuracy
- - Expand unknown person dataset
+ - Implement align_faces.py to align faces before extracting embeddings <br>
+ - Image augmentation <br>
+    - Reflect image over y-axis <br>
+    - Generate images with different lighting than original image <br>
+ - Change extract_embeddings.py so it only looks over the new images <br>
+ - Build model testing framework to get an evaluation metric for the SVM <br>
+ - Fine tune SVM for better accuracy <br>
+ - Expand unknown person dataset <br>
  
  <h1> Notes </h1>
 align_faces.py and shape_predictor_68_face_landmarks.dat are for aligning faces and currently play no part in the workflow. 
