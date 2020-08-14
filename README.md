@@ -12,8 +12,8 @@ Then run extract_embeddings.py to save the embeddings of each face. Then run tra
  - Add automatic image capturing script <br>
  - Implement align_faces.py to align faces before extracting embeddings <br>
  - Image augmentation <br>
-    - Reflect image over y-axis <br>
-    - Generate images with different lighting than original image <br>
+    - \t Reflect image over y-axis <br>
+    - \t Generate images with different lighting than original image <br>
  - Change extract_embeddings.py so it only looks over the new images <br>
  - Build model testing framework to get an evaluation metric for the SVM <br>
  - Fine tune SVM for better accuracy <br>
