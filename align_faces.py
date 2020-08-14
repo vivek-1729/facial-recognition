@@ -1,6 +1,6 @@
 # USAGE
 # python align_faces.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
-
+# This is a test case only
 # import the necessary packages
 from imutils.face_utils import FaceAligner
 from imutils.face_utils import rect_to_bb
