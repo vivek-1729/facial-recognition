@@ -9,7 +9,7 @@ Add a new subfolder to the dataset with the name of the person to be recognized.
 Then run extract_embeddings.py to save the embeddings of each face. Then run train_model.py to train the recognizer. Then run recognize_video.py which should (hopefully) provide real-time face detection. 
 
 <h1> Todo: </h1>
- - Add automatic image capturing script
+ - Add automatic image capturing script <br>
  - Implement align_faces.py to align faces before extracting embeddings 
  - Image augmentation
     - Reflect image over y-axis
