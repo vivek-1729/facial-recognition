@@ -4,7 +4,7 @@ from tqdm import tqdm
 class ImageAugmentation:
     def _reflect(self, image, path):
         flipHorizontal = cv2.flip(image, 1)
-        cv2.imwrite(path[:-4] + '-augmented-r.png', flipHorizontal)
+        cv2.imwrite(path[:-4] + '-reflected.png', flipHorizontal)
     def _adjust_gamma(self, image, gamma=1.0):
         invGamma = 1.0 / gamma
         table = np.array([((i / 255.0) ** invGamma) * 255 
