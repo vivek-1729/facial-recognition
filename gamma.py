@@ -8,14 +8,13 @@ def adjust_gamma(image, gamma=1.0):
    return cv2.LUT(image, table)
 
 x = 'dataset/vivek/1.jpg'  #location of the image
-original = cv2.imread(x, 1)
+original = cv2.imread(x)
 cv2.imshow('original',original)
 
 gammas = [0.5, 0.7, 1.3, 1.5]                                   # change the value here to get different result
 
-for gamma in gammas:
-    adjusted = adjust_gamma(original, gamma=gamma)
-    cv2.putText(adjusted, "g={}".format(gamma), (10, 30),cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 3)
-    cv2.imshow("gammam image 1", adjusted)
-    cv2.waitKey(0)
+def changeLighting(image, path):
+    for gamma in gammas:
+        adjusted = adjust_gamma(image, gamma=gamma)
+        cv2.imwrite()
 cv2.destroyAllWindows()
