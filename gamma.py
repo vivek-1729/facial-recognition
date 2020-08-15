@@ -9,14 +9,15 @@ def adjust_gamma(image, gamma=1.0):
 
    return cv2.LUT(image, table)
 
-x = 'C:/Users/524316/Desktop/stack/test.jpg'  #location of the image
+x = 'dataset/vivek/1.jpg'  #location of the image
 original = cv2.imread(x, 1)
 cv2.imshow('original',original)
 
-gamma = 0.5                                   # change the value here to get different result
-adjusted = adjust_gamma(original, gamma=gamma)
-cv2.putText(adjusted, "g={}".format(gamma), (10, 30),cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 3)
-cv2.imshow("gammam image 1", adjusted)
+gammas = [0.5, 0.7, 1.3, 1.5]                                   # change the value here to get different result
 
-cv2.waitKey(0)
+for gamma in gammas:
+    adjusted = adjust_gamma(original, gamma=gamma)
+    cv2.putText(adjusted, "g={}".format(gamma), (10, 30),cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 3)
+    cv2.imshow("gammam image 1", adjusted)
+    cv2.waitKey(0)
 cv2.destroyAllWindows()
