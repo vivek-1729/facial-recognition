@@ -8,8 +8,7 @@ if personName == 'new':
     os.mkdir('dataset/'+personName)
 validNames = os.listdir('dataset/')
 if personName not in os.listdir('dataset/'):
-    raise NameError("No folder exists for this person. Valid folder names are: "
-    + ', '.join(validNames))
+    raise NameError("No folder exists for this person. Valid folder names are: " + ', '.join(validNames))
 
 cap = cv2.VideoCapture(0)
 
@@ -18,6 +17,7 @@ while(True):
     ret, frame = cap.read()
     font = cv2.FONT_HERSHEY_COMPLEX
     cv2.putText(frame,'Press t to take photo and q to quit', (50,50), font,1, (255,0,0))
+    cv2.putText(frame,'It is sometimes difficult for the key press to register. If it doesn\'t, keep trying', (50,100), font,0.8, (255,0,0))
     cv2.imshow('frame',frame)
     if cv2.waitKey(1) & 0xFF==ord('t'):
         print('Photo taken')
