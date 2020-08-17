@@ -16,14 +16,13 @@ There are two ways to add a new person to be recognized.
 After a new subfolder is created with images of the new person, run utils.py to perform image augmentation upon the new subfolder. Then, run extract_embeddings.py to get the embeddings of the new pictures. After that, run train_model.py to train the SVM to detect faces. Finally, run detect_video.py, which should provide real-time face recognition. 
 
 ## Todo
- 1. ~~Add automatic image capturing script~~ <br>
- 2. ~~Add image augmentation script so it reflects images over y-axis and generated new images with different lighting~~<br>
- 3. Change extract_embeddings.py so it only looks over the new images <br>
- 4. Build model testing framework to get an evaluation metric for the SVM <br>
- 5. Fine tune SVM for better accuracy <br>
- 6. Expand unknown person dataset <br>
- 7. Create a main.py script that can run all the other scripts
- - [ ] Test
+ - [x] Add automatic image capturing script <br> 
+ - [x] Add image augmentation script so it reflects images over y-axis and generated new images with different lighting <br>
+ - [ ] Change extract_embeddings.py so it only looks over the new images <br>
+ - [ ] Build model testing framework to get an evaluation metric for the SVM <br>
+ - [ ] Fine tune SVM for better accuracy <br>
+ - [ ] Expand unknown person dataset <br>
+ - [ ] Create a main.py script that can run all the other scripts
  
  <h1> Notes </h1>
 A single photo (of which image augmention is run) should be enough for the model to detect that person in that pose with high confidence regardless of the lighting. But, generally the more photos of a person the model has, the better its accuracy. 
