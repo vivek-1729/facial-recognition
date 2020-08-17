@@ -15,7 +15,7 @@ There are two ways to add a new person to be recognized.
 
 After a new subfolder is created with images of the new person, run utils.py to perform image augmentation upon the new subfolder. Then, run extract_embeddings.py to get the embeddings of the new pictures. After that, run train_model.py to train the SVM to detect faces. Finally, run detect_video.py, which should provide real-time face recognition. 
 
-<h1> Todo: </h1>
+## Todo
  1. ~~Add automatic image capturing script~~ <br>
  2. ~~Add image augmentation script so it reflects images over y-axis and generated new images with different lighting~~<br>
  3. Change extract_embeddings.py so it only looks over the new images <br>
