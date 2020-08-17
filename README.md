@@ -23,6 +23,7 @@ After a new subfolder is created with images of the new person, run utils.py to 
  5. Fine tune SVM for better accuracy <br>
  6. Expand unknown person dataset <br>
  7. Create a main.py script that can run all the other scripts
+ - [ ] Test
  
  <h1> Notes </h1>
 A single photo (of which image augmention is run) should be enough for the model to detect that person in that pose with high confidence regardless of the lighting. But, generally the more photos of a person the model has, the better its accuracy. 
