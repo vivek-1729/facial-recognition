@@ -7,7 +7,7 @@ This projects takes the photos in the subfolders of "dataset", and looks for the
 and saves it to the embeddingss.pickle file. An SVM was then trained upon the embeddings to find a relationship between the embeddings and the face of a certain person, and that model is saved in recognizer.pickle. Realtime face-detection occurs
 by detecting the face in the OpenCV frame using the face detection model, computing the embedding using openFace, then predicting whose face it is using the saved recognizer. 
 
-<h1> Usage </h1> 
+## Usage
 There are two ways to add a new person to be recognized.
 1. Manually add a new subfolder to the dataset with the name of the person to be recognized, and add images to that subfolder (**note that the person has to be the only one in the image**). New photos can also be taken within takePhoto.py.
 
