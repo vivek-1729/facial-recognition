@@ -2,8 +2,8 @@
 Some scripts for this project have been adapted from:
 https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/
 https://www.pyimagesearch.com/2015/10/05/opencv-gamma-correction/
-<h1> Workflow </h1> 
-This projects takes the photos in the subfolders of "dataset", and looks for the faces using the pretrained face detection model. It then computes a 128 dimensional embedding of the face using ![openFace](http://cmusatyalab.github.io/openface/)
+## Workflow 
+This projects takes the photos in the subfolders of "dataset", and looks for the faces using the pretrained face detection model. It then computes a 128 dimensional embedding of the face using [openFace](http://cmusatyalab.github.io/openface/)
 and saves it to the embeddingss.pickle file. An SVM was then trained upon the embeddings to find a relationship between the embeddings and the face of a certain person, and that model is saved in recognizer.pickle. Realtime face-detection occurs
 by detecting the face in the OpenCV frame using the face detection model, computing the embedding using openFace, then predicting whose face it is using the saved recognizer. 
 
